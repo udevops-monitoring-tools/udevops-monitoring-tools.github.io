@@ -483,29 +483,37 @@ footer p {
 
 .logos {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
-    margin: 32px 64px;
-    padding: 0px 64px;
-    /* height: 100px; */
+    /* margin: 32px 32px; */
+    /* padding: 0px 32px; */
+    height: 100px;
     justify-content: space-between;
-    gap: 32px;
-    width: 720px;
+    /* gap: 16px; */
+    width: 900px;
     margin: 0 auto;
 }
 
 @media only screen and (max-width: 960px) {
     .logos {
+        grid-template-columns: 1fr 1fr 1fr;
         width: auto;
     }
 }
 
 .logo {
     display: inline-block;
+    /* height: auto; */
 }
 
 .logo img {
     box-sizing: border-box;
+    height: auto;
     max-width: 100%;
     vertical-align: bottom;
+}
+@media only screen and (max-width: 960px) {
+    .logo {
+        max-width: 200px;
+    }
 }
