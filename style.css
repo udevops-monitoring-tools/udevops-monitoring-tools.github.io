@@ -472,6 +472,7 @@ footer {
     color: #d3d3d3;
     /* height: 265px; */
     margin-top: 85px;
+    padding: 16px 16px;
     overflow: auto;
 
 }
@@ -498,12 +499,12 @@ footer p {
     .logos {
         grid-template-columns: 1fr 1fr 1fr;
         width: auto;
+        height: auto;
     }
 }
 
 .logo {
     display: inline-block;
-    /* height: auto; */
 }
 
 .logo img {
