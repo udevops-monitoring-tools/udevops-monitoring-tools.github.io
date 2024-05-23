@@ -485,36 +485,41 @@ footer p {
 .logos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
     align-items: center;
-    /* margin: 32px 32px; */
+    /* margin: 0 32px; */
     /* padding: 0px 32px; */
-    height: 100px;
+    /* height: 100px; */
     justify-content: space-between;
-    /* gap: 16px; */
-    width: 900px;
+    gap: 10px;
+    /* width: 900px; */
     margin: 0 auto;
 }
 
 @media only screen and (max-width: 960px) {
     .logos {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         width: auto;
         height: auto;
     }
 }
 
 .logo {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 .logo img {
-    box-sizing: border-box;
-    height: auto;
     max-width: 100%;
     vertical-align: bottom;
+    height: 74px; 
+    width: auto;
+    object-fit: contain;
 }
-@media only screen and (max-width: 960px) {
-    .logo {
-        max-width: 200px;
+/* @media only screen and (max-width: 960px) {
+    .logo img {
+        max-width: 100%;
     }
-}
+} */
